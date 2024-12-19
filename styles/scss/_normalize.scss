@@ -1,0 +1,35 @@
+  *,
+ ::before,
+ ::after {
+   box-sizing: border-box;
+ }
+ 
+ :where(ul[class]) {
+   list-style: none;
+ }
+ 
+ 
+ img {
+   display: block;
+   max-width: 100%;
+ }
+ 
+ input,
+ textarea,
+ select,
+ button {
+   font: inherit;
+ }
+
+ /**
+   Плавный скролл
+  */
+ html,
+ :has(:target) {
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+    height: 100vh; 
+    margin: 0 auto;
+ }

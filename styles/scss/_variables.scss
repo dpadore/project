@@ -1,0 +1,23 @@
+:root {
+    --color-dark: #263238;
+    --color-dark-alt: #000000;
+    --color-light: #FFFFFF;
+    --color-accent: #8362c7;
+    --color-gray: #F5F5F5;
+    --color-gray-alt: #8F95A5;
+
+    --border: 2px solid var(--color-dark);
+    --border-radius-small: 5px;
+    --border-radius-medium: 10px;
+    --border-radius-large: 15px;
+
+    --font-family-base: 'Poppins';
+
+    --container-width: 1340px;
+    --container-padding-x: 15px;
+
+    --input-height: 80px;
+    --button-height: 60px;
+
+    --transition-duration: 0.2s;
+}

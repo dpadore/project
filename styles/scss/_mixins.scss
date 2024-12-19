@@ -1,0 +1,22 @@
+@mixin reset-link {
+    color: inherit;
+
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin reset-button {
+    pudding: 0;
+    background-color: transparent;
+    border: none;
+   
+}
+
+@mixin square($size){
+    width: $size;
+    aspect-ratio: 1;
+}
+
+

@@ -1,0 +1,116 @@
+.contact_us {
+    margin-bottom: 9.7em;
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    &__left-side {
+        flex: 0.74;
+        margin: 0;
+        @include mobile {
+            flex-direction: column;
+            margin-top: 10em;
+        }
+    }
+
+    &__right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        @include tablet{
+            img{
+                width: 50%;
+            }
+        }
+
+        &__title {
+            font-size: 48px;
+            margin: 0;
+            margin-bottom: 1em;
+            @include tablet{
+                font-size: 36px;
+            }
+            @include mobile {
+                margin-top: -30em;
+                margin-bottom: 10em;
+                position: absolute;
+                align-self: center;
+            }
+        }
+
+        &__subtitle {
+            display: flex;
+            font-size: 20px;
+            text-wrap: wrap;
+            margin-bottom: 2.8em;
+            color: var(--color-gray-alt);
+            @include tablet{
+                font-size: 16px;
+            }
+        }
+
+        &__form{
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            &__input{
+            padding: 1.8em 8em;
+            border-radius: var(--border-radius-medium);
+            font-size: 16px;
+            color: var(--color-gray-alt);
+            border-color: var(--color-gray-alt);
+        
+            @include tablet{
+                font-size: 14px;
+                padding: 1.5em 5em;
+            }
+            @include mini-tablet{
+                font-size: 14px;
+                padding: 1em 1em;
+            }
+            @include mobile {
+                margin-bottom: 2em;
+                font-size: 14px;
+                width: 90%;
+                padding: 1em 6em;
+                align-self: center;
+            }
+            }
+            &__button {
+                padding: 2em 5em;
+                border: none;
+                color: var(--color-light);
+                font-size: 16px;
+                font-weight: normal;
+                border-radius: var(--border-radius-medium);
+                background-color: var(--color-dark);
+                
+                @include tablet{
+                    font-size: 14px;
+                    padding: 1.5em 5em;
+                }
+                @include mini-tablet{
+                    font-size: 14px;
+                    padding: 1em 2em;
+                }
+                @include mobile {
+                    align-self: center;
+                    width: 90%;
+                    padding: 1em 6em;
+                }
+
+            }
+        }
+        
+    }
+
+    
+}

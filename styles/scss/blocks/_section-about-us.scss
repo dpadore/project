@@ -1,0 +1,88 @@
+.about-us {
+    margin-bottom: 9em;
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+        @include tablet {
+            flex-direction: column;
+        }
+        
+        
+    }
+
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+        @include tablet {
+            flex-direction: column;
+        }
+        &__title {
+            font-size: 48px;
+            margin: 0;
+            font-weight: 600;
+            margin-bottom: 1em;
+            @include tablet{
+                font-size: 36px;
+            }
+        }
+
+        &__subtitle {
+            display: flex;
+            font-size: 20px;
+            text-wrap: wrap;
+            color: var(--color-gray-alt);
+            margin-bottom: 3em;
+            @include tablet{
+                font-size: 16px;
+            }
+        }
+        &__statistics{
+            display: flex;
+            justify-content: space-between;
+
+            .statistics{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex:1;
+            
+                &__number{
+                    font-size: 48px;
+                    font-weight: 600;
+                    color: var(--color-dark);
+                    @include tablet{
+                        font-size: 30px;
+                    }
+                }
+                &__name{
+                    display: flex;
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: var(--color-gray-alt);
+                    padding-top: 17px;
+                    @include tablet{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    &__right-side {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+        img{
+            @include tablet{
+                width: 90%;
+            }
+        }
+    }
+}
+

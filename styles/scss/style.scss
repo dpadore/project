@@ -1,0 +1,21 @@
+@import 
+'normalize',
+'fonts',
+'mixins',
+'media',
+'variables',
+'utils',
+'globals',
+'animation';
+
+
+@import 'blocks/mobile-overlay';
+@import 'blocks/header';
+@import 'blocks/section-main';
+@import 'blocks/section-skills';
+@import 'blocks/section-about-us';
+@import 'blocks/section-pricing';
+@import 'blocks/section-contact-us';
+@import 'blocks/footer';
+@import 'blocks/burger-button';
+@import 'blocks/cross-button';

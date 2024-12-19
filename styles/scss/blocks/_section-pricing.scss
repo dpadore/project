@@ -1,0 +1,256 @@
+.pricing {
+    margin-bottom: 14.3em;
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.3em;
+
+        @include tablet {
+            font-size: 36px;
+        }
+    }
+    .card {
+        display: flex;
+        background-color: var(--color-light);
+        padding: 0;
+        @include tablet {
+            margin-bottom: 1em;
+            background-color: var(--color-gray);
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 2em;
+
+        @include tablet {
+            grid-template-columns: repeat(1, auto);
+            grid-template-rows: repeat(3, auto);
+            align-items: center;
+            height: max-content;
+
+        }
+
+        &__self-study {
+            display: flex;
+            align-items: flex-start;
+
+            &__img {
+                align-self: center;
+
+                @include mini-tablet {
+                    flex-direction: column;
+                }
+            }
+
+            &__title {
+                font-size: 30px;
+                font-weight: 600;
+                color: var(--color-dark);
+                @include tablet {
+                    font-size: 22px;
+                }
+            }
+
+            &__subtitle {
+                font-size: 20px;
+                font-weight: 400;
+                color: var(--color-gray-alt);
+
+                @include tablet {
+                    font-size: 16px;
+                }
+
+            }
+
+            &__button {
+                @include tablet {
+                    font-size: 16px;
+                    border-color: var(--color-gray-alt);
+                    padding: 1em 3em;
+                    justify-content: center;
+                    align-items: center;
+                    width: inherit;
+                }
+
+                .price {
+                    color: var(--color-dark);
+                    font-size: 30px;
+
+                    @include tablet {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        &__live-online {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-left: 7%;
+            @include tablet{
+                margin: 0;
+            }
+            &__img {
+                @include mini-tablet {
+                    flex-direction: column;
+                    margin-left: 0;
+                }
+            }
+
+            &__title {
+                font-size: 30px;
+                font-weight: 600;
+                color: var(--color-dark);
+
+                @include tablet {
+                    font-size: 22px;
+                }
+            }
+
+            &__subtitle {
+                font-size: 20px;
+                font-weight: 400;
+                color: var(--color-gray-alt);
+
+                @include tablet {
+                    font-size: 16px;
+                }
+
+            }
+
+            &__button {
+                @include tablet {
+                    font-size: 16px;
+                    border-color: var(--color-gray-alt);
+                    padding: 1em 3em;
+                    justify-content: center;
+                    align-items: center;
+                    width: inherit;
+                }
+
+                .price {
+                    color: var(--color-dark);
+                    font-size: 30px;
+
+                    @include tablet {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        &__personal {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            &__img {
+                align-self: center;
+                @include mini-tablet {
+                    flex-direction: column;
+                }
+            }
+
+            &__title {
+                font-size: 30px;
+                font-weight: 600;
+                color: var(--color-dark);
+
+                @include tablet {
+                    font-size: 22px;
+                }
+            }
+
+            &__subtitle {
+                font-size: 20px;
+                font-weight: 400;
+                color: var(--color-gray-alt);
+
+                @include tablet {
+                    font-size: 16px;
+                }
+
+            }
+
+            &__button {
+                
+                @include tablet {
+                    font-size: 16px;
+                    border-color: var(--color-gray-alt);
+                    padding: 1em 3em;
+                    justify-content: center;
+                    align-items: center;
+                    width: inherit;
+                }
+
+                .price {
+                    color: var(--color-dark);
+                    font-size: 30px;
+
+                    @include tablet {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.img-container{
+    min-height: 340px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1em;
+    @include tablet {
+        justify-content: center;
+        align-self: center;
+    }
+}
+.title-container{
+    margin-bottom: 1em;
+    @include tablet {
+        justify-content: center;
+        align-self: center;
+    }
+}
+.subtitle-container{
+    min-height: 90px;
+    margin-bottom: 1em;
+    @include tablet {
+        justify-content: center;
+        align-self: center;
+    }
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-gray);
+    border: 2px solid white;
+    color: var(--color-gray-alt);
+    font-size: 18px;
+    padding: 0.5em 1em;
+    gap: 5%;
+    text-wrap: nowrap;
+    @include tablet {
+        justify-content: center;
+        align-self: center;
+    }
+}
+
